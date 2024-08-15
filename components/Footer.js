@@ -14,8 +14,26 @@ const Footer = () => {
               <li><a href="#contact" className="hover:text-gray-300">Contact</a></li>
             </ul>
           </nav>
-          <p className="text-sm text-white  bg-gray-500">&copy; {new Date().getFullYear()} <span className="text-custom-orange ">MuMair</span>. All rights reserved.</p>
+          {/* Social Media Icons */}
+        <div className="flex justify-center space-x-4 mt-4 mb-4">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/Facebook.png" alt="Facebook" className="h-5 w-a" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/Instagram.png" alt="Instagram" className="h-5 w-4" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/Twitter.png" alt="Twitter" className="h-5 w-4" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/LinkedIn.png" alt="LinkedIn" className="h-5 w-4" />
+          </a>
         </div>
+        <div className="bg-gray-500 py-4 mt-4 w-full">
+          <p className="text-sm text-white">
+            &copy; {new Date().getFullYear()} <span className="text-custom-orange">MuMair</span>. All rights reserved.
+          </p>
+        </div>        </div>
       </footer>
     );
   };

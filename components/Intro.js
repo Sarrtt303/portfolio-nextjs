@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Intro = () => {
   return (
@@ -24,16 +22,16 @@ const Intro = () => {
         />
         <div className="flex space-x-4">
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebookF} className="text-2xl text-black bg-black" />
+            <img src="/Facebook.png" className='h-6 w-4' ></img>
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} className="text-2xl text-gray-700" />
+          <img src="/Instagram.png" className='h-6 w-6'></img>
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} className="text-2xl text-gray-700" />
+          <img src="/Twitter.png" className='h-6 w-6'></img>
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedinIn} className="text-2xl text-gray-700" />
+          <img src="/LinkedIn.png" className='h-6 w-6'></img>
           </a>
         </div>
       </div>

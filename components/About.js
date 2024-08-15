@@ -4,10 +4,13 @@ const SkillBar = ({ skill, level }) => (
   <div className="mb-4">
     <div className="flex justify-between mb-1">
       <span>{skill}</span>
-      <span>{level}%</span>
     </div>
-    <div className="w-full bg-gray-200 rounded-full h-2.5">
+    <div className="w-full bg-gray-200 rounded-full h-2.5 relative">
       <div className="bg-custom-orange h-2.5 rounded-full" style={{ width: `${level}%` }}></div>
+      <div 
+        className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-white w-4 h-4 rounded-full shadow-lg border-2 border-custom-orange"
+        style={{ left: `calc(${level}% - 8px)` }}
+      ></div>
     </div>
   </div>
 );
@@ -18,7 +21,6 @@ const AboutSection = () => {
     { name: 'UI/UX', level: 85 },
     { name: 'App Design', level: 80 },
     { name: 'Graphic Design', level: 80 },
-    // Add more skills as needed
   ];
 
   return (
