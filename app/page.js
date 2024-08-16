@@ -10,7 +10,7 @@ import Contact from "../components/Contact"
 export default function Home() {
   return (
     <>
-      <div className="min-w-[1920px] min-h-[960px] w-full flex flex-col bg-white">
+      <div className="min-w-[1920px] min-h-[960px] w-full  flex flex-col bg-white">
         <Header />
         <main className="flex flex-col items-center justify-between flex-grow">
           <Intro />

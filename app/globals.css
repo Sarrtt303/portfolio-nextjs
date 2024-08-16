@@ -35,3 +35,13 @@ body {
     text-wrap: balance;
   }
 }
+/* Ensure the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Ensure main content container fills the available space */
+.main-content {
+  min-height: calc(100vh - 128px); /* Adjust the value based on the height of your header and footer */
+}
